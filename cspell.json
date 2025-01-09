@@ -1,0 +1,30 @@
+{
+  "version": "0.2",
+  "language": "en,pt,pt_BR",
+  "dictionaries": [
+    "pt_BR",
+    "medical-terms",
+    "typescript",
+    "softwareTerms"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "medical-terms",
+      "path": "./node_modules/@cspell/dict-medical-terms/cspell-ext.json"
+    }
+  ],
+  "words": [
+    "NIHSS",
+    "TIMI",
+    "GRACE",
+    "CHADS",
+    "VASC",
+    "Framingham",
+    "Pisters",
+    "anticoagulated"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    "dist/**"
+  ]
+}

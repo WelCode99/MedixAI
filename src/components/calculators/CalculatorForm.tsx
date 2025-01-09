@@ -39,7 +39,7 @@ export const CalculatorForm: React.FC<CalculatorFormProps> = ({
     resolver: zodResolver(validationSchema)
   });
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: z.infer<typeof validationSchema>) => {
     // Convert string values to numbers where needed
     const processedData = Object.entries(data).reduce((acc, [key, value]) => {
       const input = calculator.inputs.find(i => i.id === key);

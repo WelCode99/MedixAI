@@ -44,10 +44,9 @@ export const SpecialtyTabs: React.FC<SpecialtyTabsProps> = ({
                 "flex items-center space-x-2 px-4 py-2 rounded-lg whitespace-nowrap",
                 "transition-colors duration-200",
                 selectedSpecialty === specialty.id
-                  ? "bg-primary text-white"
+                  ? `bg-[${specialty.color}] text-white`
                   : "text-gray-600 hover:bg-gray-100"
               )}
-              style={selectedSpecialty === specialty.id ? { backgroundColor: specialty.color } : {}}
             >
               <Icon className="w-5 h-5" />
               <span>{specialty.name}</span>
