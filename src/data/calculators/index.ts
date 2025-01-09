@@ -9,6 +9,8 @@ import { fourScoreCalculator } from './neurology/fourScore';
 import { asaCalculator } from './anesthesiology/asa';
 import { meldCalculator } from './gastroenterology/meld';
 import { paduaScoreCalculator } from './hematology/padua';
+import { wellsPECalculator } from './pulmonology/wells-pe';
+import { crusadeCalculator } from './cardiology/crusade';
 
 export const medicalCalculators = [
   timiCalculator,
@@ -21,5 +23,7 @@ export const medicalCalculators = [
   fourScoreCalculator,
   asaCalculator,
   meldCalculator,
-  paduaScoreCalculator
+  paduaScoreCalculator,
+  wellsPECalculator,
+  crusadeCalculator
 ];
