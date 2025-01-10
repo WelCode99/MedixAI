@@ -51,7 +51,7 @@ export interface MedicalCalculator {
   category: CalculatorCategory;
   description: string;
   inputs: CalculatorInput[];
-  calculate: (values: Record<string, any>) => CalculatorResult;
+  calculate: (values: Record<string, number>) => CalculatorResult;
   references: string[];
   version: string;
   lastUpdated: Date;

@@ -4,7 +4,7 @@ import { BaseChart } from './BaseChart';
 interface CardiovascularRiskChartProps {
   data: {
     score: number;
-    risk: string;
+    risk: 'low' | 'moderate' | 'high';
     details?: Array<{ label: string; value: number }>;
   };
 }
@@ -36,7 +36,7 @@ export const CardiovascularRiskChart: React.FC<CardiovascularRiskChartProps> = (
         />
       </div>
       
-      {data.details && (
+      {data.details && data.details.length > 0 && (
         <div className="h-64">
           <BaseChart
             type="bar"
