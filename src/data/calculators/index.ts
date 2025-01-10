@@ -11,7 +11,31 @@ import { meldCalculator } from './gastroenterology/meld';
 import { paduaScoreCalculator } from './hematology/padua';
 import { wellsPECalculator } from './pulmonology/wells-pe';
 import { crusadeCalculator } from './cardiology/crusade';
+import { sofaCalculator } from './critical-care/sofa';
+import { childPughCalculator } from './hepatology/childPugh';
+import { apache2Calculator } from './critical-care/apache2';
 
+/**
+ * A collection of medical calculator functions used within the MedixAI application.
+ * 
+ * Includes the following calculators:
+ * - TIMI Calculator
+ * - GRACE Calculator
+ * - CHADS2-VASc Calculator
+ * - NIHSS Calculator
+ * - HAS-BLED Calculator
+ * - Framingham Diabetes Calculator
+ * - NEWS2 Calculator
+ * - Four Score Calculator
+ * - ASA Calculator
+ * - MELD Calculator
+ * - Padua Score Calculator
+ * - Wells PE Calculator
+ * - Crusade Calculator
+ * - SOFA Calculator
+ * - Child-Pugh Calculator
+ * - Apache II Calculator
+ */
 export const medicalCalculators = [
   timiCalculator,
   graceCalculator,
@@ -25,5 +49,8 @@ export const medicalCalculators = [
   meldCalculator,
   paduaScoreCalculator,
   wellsPECalculator,
-  crusadeCalculator
+  crusadeCalculator,
+  sofaCalculator,
+  childPughCalculator,
+  apache2Calculator
 ];
